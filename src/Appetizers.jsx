@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Menu from './menu'
+import RestaurantName from './restaurant-name'
+import Address from './address'
 
 
 const styles = {
@@ -30,8 +32,8 @@ function Appetizers() {
         return (
           <div key={food.id} style={{...styles.items}} className="row">
             <h3 className="">{food.title}</h3>
-            <p className="col-6">{food.description}</p>
-            <p className="col-6">{food.price}</p>
+            <p className="col-10">{food.description}</p>
+            <p className="col-2">{food.price}</p>
           </div>
         )
       }))
@@ -41,9 +43,9 @@ function Appetizers() {
 
 
   return (
-    <div className="d-flex justify-content-start">
-      <div className="p-3 vh-100">
-        <Menu />
+    <div className="d-flex justify-content-center">
+      <div className="p-3">
+        <RestaurantName />
         <h1 style={{...styles.titles}}>Appetizers</h1>
         {appetizers}
       </div>
