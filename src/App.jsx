@@ -20,7 +20,7 @@ const styles = {
 
 
 function App() {
-  const [menu, setMenu] = useState([]); //set state for menu, as well as each section of the menu (filtered)vvv
+  const [menu, setMenu] = useState([]); //set state for menu, as well as each section of the menu (filtered)-vvv
   const [dinner, setDinner] = useState([]);
   const [drinks, setDrinks] = useState([]);
   const [appetizers, setAppetizers] = useState([]);
@@ -30,10 +30,10 @@ function App() {
 
 
   useEffect(() => {
-    axios.get(`https://www.jsonkeeper.com/b/MDXW`) //fetching from the api
+    axios.get(`https://raw.githubusercontent.com/bootcamp-students/random-restaurant-json/main/foodList.json`) //fetching from the api
     .then(response => {
       setMenu(response.data)
-      setAppetizers(response.data.filter((x) => x.category === "Appetizer").map((food) => { //filters appetizers
+      setAppetizers(response.data.filter((x) => x.category === "Appetizer").map((food) => { //filters appetizers (or whatever-vvv)
         return (
           <div key={food.id} style={{...styles.items}} className="row"> {/*Displays food item title, description, and price*/}
             <h3 className="">{food.title}</h3>
@@ -83,7 +83,7 @@ function App() {
 
 
 
-  return (
+  return ( //Displays the main page of the website
     <div className="d-flex justify-content-center">
       <div className="p-3">
         <RestaurantName />'
