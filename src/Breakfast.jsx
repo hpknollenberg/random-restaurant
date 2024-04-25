@@ -27,7 +27,7 @@ function Breakfast() {
 
 
   useEffect(() => {
-    axios.get(`https://www.jsonkeeper.com/b/MDXW`)
+    axios.get(`https://raw.githubusercontent.com/bootcamp-students/random-restaurant-json/main/foodList.json`)
     .then(response => {
       setMenu(response.data)
       setBreakfast(response.data.filter((x) => x.category === "Breakfast").map((food) => {
