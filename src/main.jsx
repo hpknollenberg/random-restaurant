@@ -20,6 +20,7 @@ import Appetizers from './Appetizers'
 import Dinner from './Dinner'
 import Breakfast from './Breakfast'
 import Lunch from './Lunch'
+import Contact from './Contact'
 
 const site = import.meta.env.BASE_URL
 
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: '/lunch',
         element: <Lunch />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
       }
     ]
   }

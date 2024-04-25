@@ -1,6 +1,8 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom'
+import Dropdown from 'react-bootstrap/Dropdown';
+import NavItem from 'react-bootstrap/NavItem';
 
 const styles = {
   header: {
@@ -19,18 +21,26 @@ function Menu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} pe-2`} 
-              to="/" style={{...styles.header}}>Menu</NavLink>
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} pe-2`}
-              to="/appetizers" style={{...styles.header}}>Appetizers</NavLink>
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} pe-2`}
-              to="/dinner" style={{...styles.header}}>Dinner</NavLink>
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} pe-2`}
-              to="/lunch" style={{...styles.header}}>Lunch</NavLink>
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} pe-2`}
-              to="/breakfast" style={{...styles.header}}>Breakfast</NavLink>
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""}`}
-              to="/drinks" style={{...styles.header}}>Drinks</NavLink>
+            <Dropdown as={NavItem}>
+              <Dropdown.Toggle className={`border-0 p-0 ps-2 pt-1 pb-1 pe-1`} 
+                style={{...styles.header, ...styles.background}}>Menu</Dropdown.Toggle>
+              <Dropdown.Menu className="border-0" style={{...styles.background}}>
+                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                  to="/" style={{...styles.header}}>Full Menu<br></br></NavLink>
+                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                  to="/appetizers" style={{...styles.header}}>Appetizers<br></br></NavLink>
+                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                  to="/dinner" style={{...styles.header}}>Dinner<br></br></NavLink>
+                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                  to="/lunch" style={{...styles.header}}>Lunch<br></br></NavLink>
+                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                  to="/breakfast" style={{...styles.header}}>Breakfast<br></br></NavLink>
+                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                  to="/drinks" style={{...styles.header}}>Drinks<br></br></NavLink>
+              </Dropdown.Menu>
+            </Dropdown>
+            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-2 pt-1 pb-1`}
+                  to="/contact" style={{...styles.header}}>Contact<br></br></NavLink>
           </Nav>
         </Navbar.Collapse>
     </Navbar>
