@@ -18,6 +18,8 @@ import Footer from './Footer'
 import Drinks from './Drinks'
 import Appetizers from './Appetizers'
 import Dinner from './Dinner'
+import Breakfast from './Breakfast'
+import Lunch from './Lunch'
 
 const site = import.meta.env.BASE_URL
 
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
         path: '/drinks',
         element: <Drinks />
       },
+      {
+        path: '/breakfast',
+        element: <Breakfast />
+      },
+      {
+        path: '/lunch',
+        element: <Lunch />
+      }
     ]
   }
 ], {

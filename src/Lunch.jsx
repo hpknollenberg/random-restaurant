@@ -19,9 +19,9 @@ const styles = {
 }
 
 
-function Drinks() {
+function Lunch() {
   const [menu, setMenu] = useState([]);
-  const [drinks, setDrinks] = useState([]);
+  const [lunch, setLunch] = useState([]);
   
 
 
@@ -29,7 +29,7 @@ function Drinks() {
     axios.get(`https://www.jsonkeeper.com/b/MDXW`)
     .then(response => {
       setMenu(response.data)
-      setDrinks(response.data.filter((x) => x.category === "Drink").map((food) => {
+      setLunch(response.data.filter((x) => x.category === "Lunch").map((food) => {
         return (
           <div key={food.id} style={{...styles.items}} className="row">
             <h3 className="">{food.title}</h3>
@@ -47,12 +47,12 @@ function Drinks() {
     <div className="d-flex justify-content-center">
       <div className="p-3">
         <RestaurantName />
-        <h1 style={{...styles.titles}}>Drinks</h1>
-        {drinks}
+        <h1 style={{...styles.titles}}>Lunch</h1>
+        {lunch}
       </div>
     </div>
   )
 }
 
 
-export default Drinks
+export default Lunch
