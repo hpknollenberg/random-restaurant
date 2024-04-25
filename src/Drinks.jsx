@@ -14,7 +14,8 @@ const styles = {
   },
   titles: {
     fontWeight: 'bold',
-    paddingBottom: '1vh'
+    paddingBottom: '1vh',
+    paddingTop: '5vh'
   }
 }
 

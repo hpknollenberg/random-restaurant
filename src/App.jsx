@@ -86,7 +86,7 @@ function App() {
   return (
     <div className="d-flex justify-content-center" style={{...styles.all}}>
       <div className="p-3">
-        <RestaurantName />
+        <RestaurantName />'
         <h1 style={{...styles.titles}}>Appetizers</h1>
         {appetizers}
         <h1 style={{...styles.titles}}>Dinner</h1>
