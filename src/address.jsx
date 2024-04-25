@@ -21,9 +21,9 @@ function Address() {
     return (
         <div style={{...styles.address}}>
             <h4 style={{...styles.mainTitle}}>VOID & AUGURY & PRESENCE & FOOD</h4>
-            <p>0000 Unnamed Road</p>
-            <p>Polk City, IA 50226</p>
-            <p>Phone: 111-666-0000</p>
+            <p>0000 Unnamed Road<br></br>
+            Polk City, IA 50226<br></br>
+            Phone: 111-666-0000</p>
         </div>
       )
 }
