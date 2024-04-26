@@ -27,16 +27,16 @@ function Menu() {
               <Dropdown.Menu className="border-0" style={{...styles.background}}>
                 <Dropdown.Item className={`ps-4`}
                   href="/random-restaurant/" style={{...styles.header}}>Full Menu<br></br></Dropdown.Item>
-                <NavLink className={`ps-4`}
-                  to="/appetizers" style={{...styles.header}}>Appetizers<br></br></NavLink>
-                <NavLink className={`ps-4`}
-                  to="/dinner" style={{...styles.header}}>Dinner<br></br></NavLink>
-                <NavLink className={`ps-4`}
-                  to="/lunch" style={{...styles.header}}>Lunch<br></br></NavLink>
-                <NavLink className={`ps-4`}
-                  to="/breakfast" style={{...styles.header}}>Breakfast<br></br></NavLink>
-                <NavLink className={`ps-4`}
-                  to="/drinks" style={{...styles.header}}>Drinks<br></br></NavLink>
+                <Dropdown.Item className={`ps-4`}
+                  href="/random-restaurant/appetizers" style={{...styles.header}}>Appetizers<br></br></Dropdown.Item>
+                <Dropdown.Item className={`ps-4`}
+                  href="/random-restaurant/dinner" style={{...styles.header}}>Dinner<br></br></Dropdown.Item>
+                <Dropdown.Item className={`ps-4`}
+                  href="/random-restaurant/lunch" style={{...styles.header}}>Lunch<br></br></Dropdown.Item>
+                <Dropdown.Item className={`ps-4`}
+                  href="/random-restaurant/breakfast" style={{...styles.header}}>Breakfast<br></br></Dropdown.Item>
+                <Dropdown.Item className={`ps-4`}
+                  href="/random-restaurant/drinks" style={{...styles.header}}>Drinks<br></br></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <NavLink className={`ps-2 pt-1 pb-1`}
