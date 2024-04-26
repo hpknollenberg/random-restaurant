@@ -26,7 +26,7 @@ function Menu() {
                 style={{...styles.header, ...styles.background}}>Menu</Dropdown.Toggle>
               <Dropdown.Menu className="border-0" style={{...styles.background}}>
                 <Dropdown.Item className={`ps-4`}
-                  href="/" style={{...styles.header}}>Full Menu<br></br></Dropdown.Item>
+                  href="/random-restaurant/" style={{...styles.header}}>Full Menu<br></br></Dropdown.Item>
                 <NavLink className={`ps-4`}
                   to="/appetizers" style={{...styles.header}}>Appetizers<br></br></NavLink>
                 <NavLink className={`ps-4`}
