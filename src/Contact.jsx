@@ -1,10 +1,4 @@
-import { Link } from "react-router-dom";
-import axios from 'axios';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import Menu from './menu'
 import RestaurantName from './restaurant-name'
-import Address from './address'
 
 
 const styles = {
