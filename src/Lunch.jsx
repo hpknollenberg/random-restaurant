@@ -15,7 +15,8 @@ const styles = {
   titles: {
     fontWeight: 'bold',
     paddingBottom: '1vh',
-    paddingTop: '5vh'
+    paddingTop: '5vh',
+    textShadow: '2px 2px rgb(150, 197, 247'
   }
 }
 
