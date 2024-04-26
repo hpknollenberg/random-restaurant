@@ -22,25 +22,25 @@ function Menu() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Dropdown as={NavItem}>
-              <Dropdown.Toggle className={`border-0 p-0 ps-2 pt-1 pb-1 pe-1`} 
+              <Dropdown.Toggle className={`border-0 p-0 ps-2 pt-1 pb-1 pe-1`}
                 style={{...styles.header, ...styles.background}}>Menu</Dropdown.Toggle>
               <Dropdown.Menu className="border-0" style={{...styles.background}}>
-                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
-                  to="/" style={{...styles.header}}>Full Menu<br></br></NavLink>
-                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                <Dropdown.Item className={`ps-4`}
+                  href="/" style={{...styles.header}}>Full Menu<br></br></Dropdown.Item>
+                <NavLink className={`ps-4`}
                   to="/appetizers" style={{...styles.header}}>Appetizers<br></br></NavLink>
-                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                <NavLink className={`ps-4`}
                   to="/dinner" style={{...styles.header}}>Dinner<br></br></NavLink>
-                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                <NavLink className={`ps-4`}
                   to="/lunch" style={{...styles.header}}>Lunch<br></br></NavLink>
-                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                <NavLink className={`ps-4`}
                   to="/breakfast" style={{...styles.header}}>Breakfast<br></br></NavLink>
-                <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-4`}
+                <NavLink className={`ps-4`}
                   to="/drinks" style={{...styles.header}}>Drinks<br></br></NavLink>
               </Dropdown.Menu>
             </Dropdown>
-            <NavLink className={`${({ isActive }) => isActive ? "text-dark" : ""} ps-2 pt-1 pb-1`}
-                  to="/contact" style={{...styles.header}}>Contact<br></br></NavLink>
+            <NavLink className={`ps-2 pt-1 pb-1`}
+                  to="/contact" style={{...styles.header}}>Contact<br></br></NavLink>      
           </Nav>
         </Navbar.Collapse>
     </Navbar>
