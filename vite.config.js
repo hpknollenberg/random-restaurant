@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig(({}) => {
   return {
-    base: '/random-restaurant/',
     plugins: [react()],
     server: {
       port: 8080,
