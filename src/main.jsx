@@ -22,7 +22,7 @@ import Breakfast from './Breakfast'
 import Lunch from './Lunch'
 import Contact from './Contact'
 
-const site = import.meta.env.BASE_URL
+
 
 
 function Layout() {
@@ -77,9 +77,7 @@ const router = createBrowserRouter([
       }
     ]
   }
-], {
-  basename: site
-})
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
